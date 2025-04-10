@@ -1,0 +1,216 @@
+/**
+ * Biscuit Theme CSS Port
+ * A warm and inviting color palette designed to be easy on the eyes
+ * 
+ * Based on: https://github.com/Biscuit-Theme/biscuit
+ * 
+ * This CSS file contains four variants of the Biscuit theme:
+ * - Biscuit Sol Dark (sun-soaked, vibrant dark theme)
+ * - Biscuit Sol Light (sun-soaked, vibrant light theme)
+ * - Biscuit Mar Dark (more muted, sea-washed dark theme)
+ * - Biscuit Mar Light (more muted, sea-washed light theme)
+ *
+ * Following Base16 styling guidelines: https://github.com/chriskempson/base16/blob/main/styling.md
+ */
+
+/* Root level variables with all theme variants */
+:root {
+    /* Biscuit Sol Dark - vibrant, sun-soaked dark variant */
+    --biscuit-sol-dark-base00: #181515; /* Default Background */
+    --biscuit-sol-dark-base01: #221E1E; /* Lighter Background */
+    --biscuit-sol-dark-base02: #423939; /* Selection Background */
+    --biscuit-sol-dark-base03: #6D5F5F; /* Comments, Invisibles */
+    --biscuit-sol-dark-base04: #978787; /* Dark Foreground */
+    --biscuit-sol-dark-base05: #B6A8A5; /* Default Foreground */
+    --biscuit-sol-dark-base06: #F4E6D2; /* Light Foreground */
+    --biscuit-sol-dark-base07: #CA3F3F; /* Light Background */
+    --biscuit-sol-dark-base08: #E46A3A; /* Variables, Tags */
+    --biscuit-sol-dark-base09: #E39C45; /* Integers, Constants */
+    --biscuit-sol-dark-base0A: #989F56; /* Classes, Markup */
+    --biscuit-sol-dark-base0B: #629386; /* Strings, Success */
+    --biscuit-sol-dark-base0C: #517894; /* Support, Regular Expressions */
+    --biscuit-sol-dark-base0D: #4A5A8D; /* Functions, Methods */
+    --biscuit-sol-dark-base0E: #9F569A; /* Keywords, Storage */
+    --biscuit-sol-dark-base0F: #C45497; /* Deprecated */
+
+    /* Semantic aliases for Sol Dark */
+    --biscuit-sol-dark-text: var(--biscuit-sol-dark-base05);
+    --biscuit-sol-dark-primary: var(--biscuit-sol-dark-base0D);
+    --biscuit-sol-dark-secondary: var(--biscuit-sol-dark-base0E);
+    --biscuit-sol-dark-background: var(--biscuit-sol-dark-base00);
+    --biscuit-sol-dark-accent: var(--biscuit-sol-dark-base0A);
+
+    /* Biscuit Sol Light - vibrant, sun-soaked light variant */
+    --biscuit-sol-light-base00: #F4E6D2; /* Default Background */
+    --biscuit-sol-light-base01: #DBC6C2; /* Lighter Background */
+    --biscuit-sol-light-base02: #B79F9F; /* Selection Background */
+    --biscuit-sol-light-base03: #A18787; /* Comments, Invisibles */
+    --biscuit-sol-light-base04: #423939; /* Dark Foreground */
+    --biscuit-sol-light-base05: #2B2626; /* Default Foreground */
+    --biscuit-sol-light-base06: #181515; /* Light Foreground */
+    --biscuit-sol-light-base07: #CB2424; /* Light Background */
+    --biscuit-sol-light-base08: #E95318; /* Variables, Tags */
+    --biscuit-sol-light-base09: #E98F21; /* Integers, Constants */
+    --biscuit-sol-light-base0A: #9BA636; /* Classes, Markup */
+    --biscuit-sol-light-base0B: #3E9F85; /* Strings, Success */
+    --biscuit-sol-light-base0C: #34709B; /* Support, Regular Expressions */
+    --biscuit-sol-light-base0D: #2F4692; /* Functions, Methods */
+    --biscuit-sol-light-base0E: #A6369F; /* Keywords, Storage */
+    --biscuit-sol-light-base0F: #CF2D8E; /* Deprecated */
+
+    /* Semantic aliases for Sol Light */
+    --biscuit-sol-light-text: var(--biscuit-sol-light-base05);
+    --biscuit-sol-light-primary: var(--biscuit-sol-light-base0D);
+    --biscuit-sol-light-secondary: var(--biscuit-sol-light-base0E);
+    --biscuit-sol-light-background: var(--biscuit-sol-light-base00);
+    --biscuit-sol-light-accent: var(--biscuit-sol-light-base0A);
+
+    /* Biscuit Mar Dark - muted, sea-washed dark variant */
+    --biscuit-mar-dark-base00: #1A1515; /* Default Background */
+    --biscuit-mar-dark-base01: #2d2424; /* Lighter Background */
+    --biscuit-mar-dark-base02: #453636; /* Selection Background */
+    --biscuit-mar-dark-base03: #725a5a; /* Comments, Invisibles */
+    --biscuit-mar-dark-base04: #9c8181; /* Dark Foreground */
+    --biscuit-mar-dark-base05: #DCC9BC; /* Default Foreground */
+    --biscuit-mar-dark-base06: #ffe9c7; /* Light Foreground */
+    --biscuit-mar-dark-base07: #CF223E; /* Light Background */
+    --biscuit-mar-dark-base08: #F07342; /* Variables, Tags */
+    --biscuit-mar-dark-base09: #E39C45; /* Integers, Constants */
+    --biscuit-mar-dark-base0A: #959A6B; /* Classes, Markup */
+    --biscuit-mar-dark-base0B: #768F80; /* Strings, Success */
+    --biscuit-mar-dark-base0C: #756D94; /* Support, Regular Expressions */
+    --biscuit-mar-dark-base0D: #614F76; /* Functions, Methods */
+    --biscuit-mar-dark-base0E: #7B3D79; /* Keywords, Storage */
+    --biscuit-mar-dark-base0F: #AE3F82; /* Deprecated */
+
+    /* Semantic aliases for Mar Dark */
+    --biscuit-mar-dark-text: var(--biscuit-mar-dark-base05);
+    --biscuit-mar-dark-primary: var(--biscuit-mar-dark-base0D);
+    --biscuit-mar-dark-secondary: var(--biscuit-mar-dark-base0E);
+    --biscuit-mar-dark-background: var(--biscuit-mar-dark-base00);
+    --biscuit-mar-dark-accent: var(--biscuit-mar-dark-base0A);
+
+    /* Biscuit Mar Light - muted, sea-washed light variant */
+    --biscuit-mar-light-base00: #FFF7EB; /* Default Background */
+    --biscuit-mar-light-base01: #E0CFC6; /* Lighter Background */
+    --biscuit-mar-light-base02: #C1AEAE; /* Selection Background */
+    --biscuit-mar-light-base03: #A38A8A; /* Comments, Invisibles */
+    --biscuit-mar-light-base04: #9C8181; /* Dark Foreground */ --biscuit-mar-light-base05: #483939; /* Default Foreground */
+    --biscuit-mar-light-base06: #2D2424; /* Light Foreground */
+    --biscuit-mar-light-base07: #B54851; /* Light Background */
+    --biscuit-mar-light-base08: #D0796D; /* Variables, Tags */
+    --biscuit-mar-light-base09: #C6846C; /* Integers, Constants */ --biscuit-mar-light-base0A: #938579; /* Classes, Markup */
+    --biscuit-mar-light-base0B: #878985; /* Strings, Success */
+    --biscuit-mar-light-base0C: #877B85; /* Support, Regular Expressions */
+    --biscuit-mar-light-base0D: #79657A; /* Functions, Methods */
+    --biscuit-mar-light-base0E: #794F65; /* Keywords, Storage */
+    --biscuit-mar-light-base0F: #9F596C; /* Deprecated */
+
+    /* Semantic aliases for Mar Light */
+    --biscuit-mar-light-text: var(--biscuit-mar-light-base05);
+    --biscuit-mar-light-primary: var(--biscuit-mar-light-base0D);
+    --biscuit-mar-light-secondary: var(--biscuit-mar-light-base0E);
+    --biscuit-mar-light-background: var(--biscuit-mar-light-base00);
+    --biscuit-mar-light-accent: var(--biscuit-mar-light-base0A);
+}
+
+/* Theme classes for applying whole themes */
+.theme-biscuit-sol-dark {
+    --base00: var(--biscuit-sol-dark-base00);
+    --base01: var(--biscuit-sol-dark-base01);
+    --base02: var(--biscuit-sol-dark-base02);
+    --base03: var(--biscuit-sol-dark-base03);
+    --base04: var(--biscuit-sol-dark-base04);
+    --base05: var(--biscuit-sol-dark-base05);
+    --base06: var(--biscuit-sol-dark-base06);
+    --base07: var(--biscuit-sol-dark-base07);
+    --base08: var(--biscuit-sol-dark-base08);
+    --base09: var(--biscuit-sol-dark-base09);
+    --base0A: var(--biscuit-sol-dark-base0A);
+    --base0B: var(--biscuit-sol-dark-base0B);
+    --base0C: var(--biscuit-sol-dark-base0C);
+    --base0D: var(--biscuit-sol-dark-base0D);
+    --base0E: var(--biscuit-sol-dark-base0E);
+    --base0F: var(--biscuit-sol-dark-base0F);
+
+    --text: var(--base05);
+    --primary: var(--base0D);
+    --secondary: var(--base0E);
+    --background: var(--base00);
+    --accent: var(--base0A);
+}
+
+.theme-biscuit-sol-light {
+    --base00: var(--biscuit-sol-light-base00);
+    --base01: var(--biscuit-sol-light-base01);
+    --base02: var(--biscuit-sol-light-base02);
+    --base03: var(--biscuit-sol-light-base03);
+    --base04: var(--biscuit-sol-light-base04);
+    --base05: var(--biscuit-sol-light-base05);
+    --base06: var(--biscuit-sol-light-base06);
+    --base07: var(--biscuit-sol-light-base07);
+    --base08: var(--biscuit-sol-light-base08);
+    --base09: var(--biscuit-sol-light-base09);
+    --base0A: var(--biscuit-sol-light-base0A);
+    --base0B: var(--biscuit-sol-light-base0B);
+    --base0C: var(--biscuit-sol-light-base0C);
+    --base0D: var(--biscuit-sol-light-base0D);
+    --base0E: var(--biscuit-sol-light-base0E);
+    --base0F: var(--biscuit-sol-light-base0F);
+
+    --text: var(--base05);
+    --primary: var(--base0D);
+    --secondary: var(--base0E);
+    --background: var(--base00);
+    --accent: var(--base0A);
+}
+
+.theme-biscuit-mar-dark {
+    --base00: var(--biscuit-mar-dark-base00);
+    --base01: var(--biscuit-mar-dark-base01);
+    --base02: var(--biscuit-mar-dark-base02);
+    --base03: var(--biscuit-mar-dark-base03);
+    --base04: var(--biscuit-mar-dark-base04);
+    --base05: var(--biscuit-mar-dark-base05);
+    --base06: var(--biscuit-mar-dark-base06);
+    --base07: var(--biscuit-mar-dark-base07);
+    --base08: var(--biscuit-mar-dark-base08);
+    --base09: var(--biscuit-mar-dark-base09);
+    --base0A: var(--biscuit-mar-dark-base0A);
+    --base0B: var(--biscuit-mar-dark-base0B);
+    --base0C: var(--biscuit-mar-dark-base0C);
+    --base0D: var(--biscuit-mar-dark-base0D);
+    --base0E: var(--biscuit-mar-dark-base0E);
+    --base0F: var(--biscuit-mar-dark-base0F);
+
+    --text: var(--base05);
+    --primary: var(--base0D);
+    --secondary: var(--base0E);
+    --background: var(--base00);
+    --accent: var(--base0A);
+}
+
+.theme-biscuit-mar-light {
+    --base00: var(--biscuit-mar-light-base00);
+    --base01: var(--biscuit-mar-light-base01);
+    --base02: var(--biscuit-mar-light-base02);
+    --base03: var(--biscuit-mar-light-base03);
+    --base04: var(--biscuit-mar-light-base04);
+    --base05: var(--biscuit-mar-light-base05);
+    --base06: var(--biscuit-mar-light-base06);
+    --base07: var(--biscuit-mar-light-base07);
+    --base08: var(--biscuit-mar-light-base08);
+    --base09: var(--biscuit-mar-light-base09);
+    --base0A: var(--biscuit-mar-light-base0A);
+    --base0B: var(--biscuit-mar-light-base0B);
+    --base0C: var(--biscuit-mar-light-base0C);
+    --base0D: var(--biscuit-mar-light-base0D);
+    --base0E: var(--biscuit-mar-light-base0E);
+    --base0F: var(--biscuit-mar-light-base0F);
+
+    --text: var(--base05);
+    --primary: var(--base0D);
+    --secondary: var(--base0E);
+    --background: var(--base00);
+    --accent: var(--base0A);
+}
