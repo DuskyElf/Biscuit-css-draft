@@ -1,0 +1,33 @@
+/**
+ * Biscuit Theme CSS Port - Sol Dark Variant
+ * A sun-soaked, vibrant dark theme from the Biscuit Theme family
+ * 
+ * Based on: https://github.com/Biscuit-Theme/biscuit
+ */
+
+:root {
+    /* Biscuit Sol Dark - vibrant, sun-soaked dark variant */
+    --base00: #181515; /* Default Background */
+    --base01: #221E1E; /* Lighter Background */
+    --base02: #423939; /* Selection Background */
+    --base03: #6D5F5F; /* Comments, Invisibles */
+    --base04: #978787; /* Dark Foreground */
+    --base05: #B6A8A5; /* Default Foreground */
+    --base06: #F4E6D2; /* Light Foreground */
+    --base07: #CA3F3F; /* Light Background */
+    --base08: #E46A3A; /* Variables, Tags */
+    --base09: #E39C45; /* Integers, Constants */
+    --base0A: #989F56; /* Classes, Markup */
+    --base0B: #629386; /* Strings, Success */
+    --base0C: #517894; /* Support, Regular Expressions */
+    --base0D: #4A5A8D; /* Functions, Methods */
+    --base0E: #9F569A; /* Keywords, Storage */
+    --base0F: #C45497; /* Deprecated */
+
+    /* Semantic aliases */
+    --text: var(--base05);
+    --primary: var(--base0D);
+    --secondary: var(--base0E);
+    --background: var(--base00);
+    --accent: var(--base0A);
+}

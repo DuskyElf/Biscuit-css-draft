@@ -17,6 +17,54 @@ This CSS port provides four variants of the Biscuit Theme:
 
 ## 📥 Installation
 
+You can use the Biscuit themes in two different ways:
+
+### Method 1: Individual Theme Files (Recommended)
+
+Each theme is available as a separate CSS file which includes only the variables for that theme directly in the root:
+
+1. Download the specific theme file you want to use:
+   - `biscuit-sol-dark.css` - For the Sol Dark theme
+   - `biscuit-sol-light.css` - For the Sol Light theme
+   - `biscuit-mar-dark.css` - For the Mar Dark theme  
+   - `biscuit-mar-light.css` - For the Mar Light theme
+
+2. Include it in your HTML file:
+
+```html
+<!-- For Sol Dark theme -->
+<link rel="stylesheet" href="path/to/biscuit-sol-dark.css">
+
+<!-- For Sol Light theme -->
+<link rel="stylesheet" href="path/to/biscuit-sol-light.css">
+
+<!-- For Mar Dark theme -->
+<link rel="stylesheet" href="path/to/biscuit-mar-dark.css">
+
+<!-- For Mar Light theme -->
+<link rel="stylesheet" href="path/to/biscuit-mar-light.css">
+```
+
+> **⚠️ Important:** Do not import multiple individual theme files simultaneously in the same project. Since all files define the same CSS variable names (like `--base00`, `--text`, etc.) at the root level, they will contradict each other. If you need to use multiple themes together, use Method 2 with the combined theme file instead.
+
+With this method, you can use the theme variables directly in your CSS:
+
+```css
+.my-element {
+  color: var(--text);
+  background-color: var(--background);
+}
+
+.code-block {
+  color: var(--base0B); /* Strings */
+  background-color: var(--base00); /* Background */
+}
+```
+
+### Method 2: Combined Theme File
+
+If you need to use multiple themes or switch between them, you can use the combined file:
+
 1. Download the `biscuit.css` file
 2. Include it in your HTML file:
 
@@ -26,9 +74,31 @@ This CSS port provides four variants of the Biscuit Theme:
 
 ## 🎨 Theme Usage
 
-You have two ways to use the Biscuit themes:
+### Method 1: Using Individual Theme Files
 
-### Method 1: Using Theme Classes
+When using individual theme files, the theme colors are available directly at the root level:
+
+```css
+/* Using standard Base16 variables */
+.element {
+  color: var(--base05); /* Default text color */
+  background-color: var(--base00); /* Default background */
+}
+
+/* Using semantic aliases */
+.button {
+  background-color: var(--primary);
+  color: var(--text);
+  border: 2px solid var(--accent);
+}
+```
+
+This is the recommended approach for:
+- Single-theme applications
+- Simple, clean CSS with short variable names
+- Applications where the theme is not meant to be changed
+
+### Method 2: Using Theme Classes (with combined theme file)
 
 Theme classes can be applied to any HTML element or container:
 
@@ -70,7 +140,7 @@ Theme classes can be applied to any HTML element or container:
 </div>
 ```
 
-When using theme classes, you can access colors with standard variable names in the element and its children:
+When using theme classes with the combined file, you can access colors with standard variable names in the element and its children:
 
 ```css
 /* Using semantic alias variables */
@@ -96,15 +166,14 @@ When using theme classes, you can access colors with standard variable names in 
 .my-syntax-highlight .comment { color: var(--comment-color); }
 ```
 
-This is the recommended approach for:
-- Applying a consistent theme throughout your application
-- Creating theme-switching functionality
-- Maintaining clean, readable CSS without long variable names
+This approach is useful for:
+- Creating multi-themed applications
+- Implementing theme-switching functionality
 - Creating sections with different themes on the same page
 
-### Method 2: Using Direct Theme Variables
+### Method 3: Using Direct Theme Variables (with combined theme file)
 
-All theme colors are also directly available at the root level with prefixed names, allowing you to use any color from any theme variant without applying theme classes:
+With the combined file, all theme colors are also directly available at the root level with prefixed names:
 
 ```css
 /* Using specific theme colors directly from any variant */
@@ -130,11 +199,17 @@ This approach is useful for:
 - Creating mixed theme elements
 - Using colors from multiple theme variants simultaneously
 - Creating custom color schemes based on Biscuit colors
-- For more direct control while using colors
 
 ## 🎨 Theme Structure
 
-### Root Level Variables
+### Root Level Variables (Individual Files)
+
+When using individual theme files, all variables are available directly at the root level:
+
+- Base colors: `--base00` through `--base0F`
+- Semantic aliases: `--text`, `--primary`, `--secondary`, `--background`, `--accent`
+
+### Root Level Variables (Combined File)
 
 Every theme color is available directly at the root level with the following naming pattern:
 
@@ -157,7 +232,7 @@ And `[purpose]` can be:
 - `background`
 - `accent`
 
-### Theme Class Variables
+### Theme Class Variables (Combined File)
 
 The standard Base16 variables (`--base00` through `--base0F`) and semantic aliases (`--text`, `--primary`, etc.) are only available when you apply one of the theme classes on the element or one of its parents. 
 

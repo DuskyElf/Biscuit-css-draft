@@ -1,0 +1,33 @@
+/**
+ * Biscuit Theme CSS Port - Mar Light Variant
+ * A muted, sea-washed light theme from the Biscuit Theme family
+ * 
+ * Based on: https://github.com/Biscuit-Theme/biscuit
+ */
+
+:root {
+    /* Biscuit Mar Light - muted, sea-washed light variant */
+    --base00: #FFF7EB; /* Default Background */
+    --base01: #E0CFC6; /* Lighter Background */
+    --base02: #C1AEAE; /* Selection Background */
+    --base03: #A38A8A; /* Comments, Invisibles */
+    --base04: #9C8181; /* Dark Foreground */ 
+    --base05: #483939; /* Default Foreground */
+    --base06: #2D2424; /* Light Foreground */
+    --base07: #B54851; /* Light Background */
+    --base08: #D0796D; /* Variables, Tags */
+    --base09: #C6846C; /* Integers, Constants */ 
+    --base0A: #938579; /* Classes, Markup */
+    --base0B: #878985; /* Strings, Success */
+    --base0C: #877B85; /* Support, Regular Expressions */
+    --base0D: #79657A; /* Functions, Methods */
+    --base0E: #794F65; /* Keywords, Storage */
+    --base0F: #9F596C; /* Deprecated */
+
+    /* Semantic aliases */
+    --text: var(--base05);
+    --primary: var(--base0D);
+    --secondary: var(--base0E);
+    --background: var(--base00);
+    --accent: var(--base0A);
+}
