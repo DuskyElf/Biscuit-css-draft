@@ -30,4 +30,11 @@
     --secondary: var(--base0E);
     --background: var(--base00);
     --accent: var(--base0A);
+    --dull: var(--base03);
+    --warning: var(--base09);
+    --error: var(--base08);
+    --text-select: var(--base05);
+    --background-select: var(--base02);
+    --text-alt: var(--base04);
+    --background-alt: var(--base01);
 }

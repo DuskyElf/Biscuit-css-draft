@@ -91,6 +91,23 @@ When using individual theme files, the theme colors are available directly at th
   color: var(--text);
   border: 2px solid var(--accent);
 }
+
+.notification {
+  background-color: var(--background-alt);
+  color: var(--text-alt);
+  border: 1px solid var(--dull);
+}
+
+.error-message {
+  color: var(--error);
+  border-left: 4px solid var(--error);
+  background-color: var(--background);
+}
+
+.selected-text {
+  color: var(--text-select);
+  background-color: var(--background-select);
+}
 ```
 
 This is the recommended approach for:
@@ -207,7 +224,19 @@ This approach is useful for:
 When using individual theme files, all variables are available directly at the root level:
 
 - Base colors: `--base00` through `--base0F`
-- Semantic aliases: `--text`, `--primary`, `--secondary`, `--background`, `--accent`
+- Semantic aliases: 
+  - `--text` - Default text color (maps to base05)
+  - `--primary` - Primary interactive elements (maps to base0D)
+  - `--secondary` - Secondary interactive elements (maps to base0E)
+  - `--background` - Main background color (maps to base00)
+  - `--accent` - Accent color for highlights (maps to base0A)
+  - `--dull` - For muted text like comments (maps to base03)
+  - `--warning` - For warning messages and indicators (maps to base09)
+  - `--error` - For error messages and indicators (maps to base08)
+  - `--text-select` - For text in selected areas (maps to base05)
+  - `--background-select` - For backgrounds of selected areas (maps to base02)
+  - `--text-alt` - For alternative text colors (maps to base04)
+  - `--background-alt` - For alternative backgrounds (maps to base01)
 
 ### Root Level Variables (Combined File)
 
@@ -225,12 +254,19 @@ Where `[variant]` can be:
 - `mar-dark`
 - `mar-light`
 
-And `[purpose]` can be:
-- `text`
-- `primary`
-- `secondary`
-- `background`
-- `accent`
+And `[purpose]` can be any of the following semantic aliases:
+- `text` - Default text color
+- `primary` - Primary interactive elements
+- `secondary` - Secondary interactive elements
+- `background` - Main background color
+- `accent` - Accent color for highlights
+- `dull` - For muted text like comments
+- `warning` - For warning messages and indicators
+- `error` - For error messages and indicators
+- `text-select` - For text in selected areas
+- `background-select` - For backgrounds of selected areas
+- `text-alt` - For alternative text colors
+- `background-alt` - For alternative backgrounds
 
 ### Theme Class Variables (Combined File)
 

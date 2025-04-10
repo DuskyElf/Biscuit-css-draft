@@ -39,6 +39,13 @@
     --biscuit-sol-dark-secondary: var(--biscuit-sol-dark-base0E);
     --biscuit-sol-dark-background: var(--biscuit-sol-dark-base00);
     --biscuit-sol-dark-accent: var(--biscuit-sol-dark-base0A);
+    --biscuit-sol-dark-dull: var(--biscuit-sol-dark-base03);
+    --biscuit-sol-dark-warning: var(--biscuit-sol-dark-base09);
+    --biscuit-sol-dark-error: var(--biscuit-sol-dark-base08);
+    --biscuit-sol-dark-text-select: var(--biscuit-sol-dark-base05);
+    --biscuit-sol-dark-background-select: var(--biscuit-sol-dark-base02);
+    --biscuit-sol-dark-text-alt: var(--biscuit-sol-dark-base04);
+    --biscuit-sol-dark-background-alt: var(--biscuit-sol-dark-base01);
 
     /* Biscuit Sol Light - vibrant, sun-soaked light variant */
     --biscuit-sol-light-base00: #F4E6D2; /* Default Background */
@@ -64,6 +71,13 @@
     --biscuit-sol-light-secondary: var(--biscuit-sol-light-base0E);
     --biscuit-sol-light-background: var(--biscuit-sol-light-base00);
     --biscuit-sol-light-accent: var(--biscuit-sol-light-base0A);
+    --biscuit-sol-light-dull: var(--biscuit-sol-light-base03);
+    --biscuit-sol-light-warning: var(--biscuit-sol-light-base09);
+    --biscuit-sol-light-error: var(--biscuit-sol-light-base08);
+    --biscuit-sol-light-text-select: var(--biscuit-sol-light-base05);
+    --biscuit-sol-light-background-select: var(--biscuit-sol-light-base02);
+    --biscuit-sol-light-text-alt: var(--biscuit-sol-light-base04);
+    --biscuit-sol-light-background-alt: var(--biscuit-sol-light-base01);
 
     /* Biscuit Mar Dark - muted, sea-washed dark variant */
     --biscuit-mar-dark-base00: #1A1515; /* Default Background */
@@ -89,6 +103,13 @@
     --biscuit-mar-dark-secondary: var(--biscuit-mar-dark-base0E);
     --biscuit-mar-dark-background: var(--biscuit-mar-dark-base00);
     --biscuit-mar-dark-accent: var(--biscuit-mar-dark-base0A);
+    --biscuit-mar-dark-dull: var(--biscuit-mar-dark-base03);
+    --biscuit-mar-dark-warning: var(--biscuit-mar-dark-base09);
+    --biscuit-mar-dark-error: var(--biscuit-mar-dark-base08);
+    --biscuit-mar-dark-text-select: var(--biscuit-mar-dark-base05);
+    --biscuit-mar-dark-background-select: var(--biscuit-mar-dark-base02);
+    --biscuit-mar-dark-text-alt: var(--biscuit-mar-dark-base04);
+    --biscuit-mar-dark-background-alt: var(--biscuit-mar-dark-base01);
 
     /* Biscuit Mar Light - muted, sea-washed light variant */
     --biscuit-mar-light-base00: #FFF7EB; /* Default Background */
@@ -112,6 +133,13 @@
     --biscuit-mar-light-secondary: var(--biscuit-mar-light-base0E);
     --biscuit-mar-light-background: var(--biscuit-mar-light-base00);
     --biscuit-mar-light-accent: var(--biscuit-mar-light-base0A);
+    --biscuit-mar-light-dull: var(--biscuit-mar-light-base03);
+    --biscuit-mar-light-warning: var(--biscuit-mar-light-base09);
+    --biscuit-mar-light-error: var(--biscuit-mar-light-base08);
+    --biscuit-mar-light-text-select: var(--biscuit-mar-light-base05);
+    --biscuit-mar-light-background-select: var(--biscuit-mar-light-base02);
+    --biscuit-mar-light-text-alt: var(--biscuit-mar-light-base04);
+    --biscuit-mar-light-background-alt: var(--biscuit-mar-light-base01);
 }
 
 /* Theme classes for applying whole themes */
@@ -138,6 +166,13 @@
     --secondary: var(--base0E);
     --background: var(--base00);
     --accent: var(--base0A);
+    --dull: var(--base03);
+    --warning: var(--base09);
+    --error: var(--base08);
+    --text-select: var(--base05);
+    --background-select: var(--base02);
+    --text-alt: var(--base04);
+    --background-alt: var(--base01);
 }
 
 .theme-biscuit-sol-light {
@@ -163,6 +198,13 @@
     --secondary: var(--base0E);
     --background: var(--base00);
     --accent: var(--base0A);
+    --dull: var(--base03);
+    --warning: var(--base09);
+    --error: var(--base08);
+    --text-select: var(--base05);
+    --background-select: var(--base02);
+    --text-alt: var(--base04);
+    --background-alt: var(--base01);
 }
 
 .theme-biscuit-mar-dark {
@@ -188,6 +230,13 @@
     --secondary: var(--base0E);
     --background: var(--base00);
     --accent: var(--base0A);
+    --dull: var(--base03);
+    --warning: var(--base09);
+    --error: var(--base08);
+    --text-select: var(--base05);
+    --background-select: var(--base02);
+    --text-alt: var(--base04);
+    --background-alt: var(--base01);
 }
 
 .theme-biscuit-mar-light {
@@ -213,4 +262,11 @@
     --secondary: var(--base0E);
     --background: var(--base00);
     --accent: var(--base0A);
+    --dull: var(--base03);
+    --warning: var(--base09);
+    --error: var(--base08);
+    --text-select: var(--base05);
+    --background-select: var(--base02);
+    --text-alt: var(--base04);
+    --background-alt: var(--base01);
 }
